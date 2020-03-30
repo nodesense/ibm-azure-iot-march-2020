@@ -122,3 +122,10 @@ npm install @azure/event-hubs@2
             input: function argument is passed from IOT CLoud
             output: the result returned by the device function is send to IOT Cloud
 
+
+# Call remote method programatically like API service/mobile app
+
+```
+npm install azure-iothub
+```
+
