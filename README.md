@@ -98,3 +98,10 @@ npm install @azure/event-hubs@2
     node subscribe-messages.js
    
 
+
+# Receive message from IOT Hub
+
+1. node device-receive-messages.js
+
+2. Go to the device panel in IoT Hub, use "Message to Device" to send a message from IOT Hub UI
+3. 

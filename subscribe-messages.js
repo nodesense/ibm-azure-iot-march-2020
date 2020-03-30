@@ -52,6 +52,7 @@ EventHubClient.createFromIotHubConnectionString(connectionString)
                                                     printMessage, 
                                                     printError, 
                                                     // read the data posted from now onwards
-                                                    { eventPosition: EventPosition.fromEnqueuedTime(Date.now()) });
+                                                    { eventPosition: EventPosition.fromEnqueuedTime(Date.now()) }
+                                                    );
                         });
                 }).catch(printError);
