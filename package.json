@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "azure-iot-device": "^1.13.0",
+    "azure-iot-device-mqtt": "^1.12.0"
+  }
 }

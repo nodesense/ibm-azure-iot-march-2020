@@ -21,8 +21,48 @@
 
     Done using cli / command prompt, after installaing Azure cli
 
-
     Open Command prompt and type below
 
-    az extension add --name azure-iot
+    `az extension add --name azure-iot`
 
+
+6. Azure Pass
+
+
+# Languages supported
+
+Node.js
+Python
+Java
+.NET
+
+
+# Node.js
+
+    node - javascript runtime - execute javascript
+    npm - package manager, install the libraries, tools for node.js
+ 
+
+
+# create a node.js
+
+open a command prompt
+
+```
+mkdir azure-iot
+
+cd azure-iot
+
+npm init -y 
+```
+
+so far, a file called package.json created
+
+now install libraries for Azure IOT Hub
+
+```
+npm install azure-iot-device-mqtt
+
+npm install azure-iot-device
+
+```
