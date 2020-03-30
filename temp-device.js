@@ -8,7 +8,7 @@
 
 // go to specific DEVICE, copy the primary connection string
 //TODO: Paste your device-1 primary connection string
-var connectionString = '';
+var connectionString = 'HostName=krishiot.azure-devices.net;DeviceId=device-1;SharedAccessKey=s95b+gWiEVPlD+JuuCuBL2uIbCG1jyq87cx0BZBSToQ=';
 
 // npm install azure-iot-device-mqtt
 var Mqtt = require('azure-iot-device-mqtt').Mqtt; // Protocol

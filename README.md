@@ -66,8 +66,35 @@ npm install azure-iot-device-mqtt
 npm install azure-iot-device
 
 ```
-
+```
 1. create a file called temp-device.js, paste the content, include device primary connection string
 
-2. run using `node temp-device.js`
+2. Open terminal in Visual Studio Code
+
+3. Type command  
+
+        node temp-device.js
+```
+
+If you are running in powershell,
+
+    ps> cmd
+    c:\.......\azure-iot> node temp-device.js
+
+
+# to Read message from EventHub, where all messages are stored
+
+```
+npm install @azure/event-hubs@2
+```
+
+
+1. create file called subscribe-messages.js 
+
+2. paste the file content from github
+
+3. run using 
+    
+    node subscribe-messages.js
+   
 
