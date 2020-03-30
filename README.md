@@ -104,4 +104,21 @@ npm install @azure/event-hubs@2
 1. node device-receive-messages.js
 
 2. Go to the device panel in IoT Hub, use "Message to Device" to send a message from IOT Hub UI
-3. 
+
+
+
+# Direct Methods
+
+    Remote Method Invocation
+        calls a function in the device
+            [0, 10, 20, 25, 29, 35, .....]
+
+        reset a meter to zero
+            [0, 4, 6, 7, ....]
+
+        Calibration
+
+        Calls a function in the device
+            input: function argument is passed from IOT CLoud
+            output: the result returned by the device function is send to IOT Cloud
+

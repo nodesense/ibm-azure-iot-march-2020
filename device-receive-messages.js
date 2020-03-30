@@ -30,9 +30,10 @@ var client = DeviceClient.fromConnectionString(connectionString, Mqtt);
 
     // acknowledgement back to the cloud that message is processed
     // don't send the message again
-    client.complete(msg, function(result) {
+    client.complete(msg, function(error) {
         // confirmation from IOT Hub confirming ack received
-        console.log('ack result ' + result)
+        // error is null means, no error
+        console.log('ack result ' + error)
     });
   });
 
