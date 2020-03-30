@@ -66,3 +66,8 @@ npm install azure-iot-device-mqtt
 npm install azure-iot-device
 
 ```
+
+1. create a file called temp-device.js, paste the content, include device primary connection string
+
+2. run using `node temp-device.js`
+
