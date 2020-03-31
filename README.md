@@ -209,4 +209,14 @@ File are uploaded using HTTP protocol, DOES NOT CONSUME MESSAGE METER
  Device Send the File to IOT Hub --> Iot Hub --> Blog Storage Container
 
  node upload-device-files.js
- 
+
+
+# Device Management APIS
+
+    Create the devices/delete the device programatically
+
+    node create-devices.js
+
+    node delete-devices.js
+
+    
