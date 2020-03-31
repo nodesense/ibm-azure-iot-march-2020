@@ -312,7 +312,10 @@ run node alert-servicebus.js
 
     node analytics-servicebus.js
 
-    
+    take latest code
+
+    node energy-device.js
+
 
 
 # Power BI - Visualization / Optionals
