@@ -189,4 +189,24 @@ az iot hub device-identity show-connection-string --hub-name krishiot --device-i
 1. run node device-twin.js 
 
     go to iot hub --> devices --> pick a device-1 --> check device-twin tab
-    
+
+
+
+# File/Blob Upload
+
+ Message Meter - 4 KB per msg is expensive
+
+
+Create Storage Account [Pay separately along with IOT Hub] + Create Container +
+    Attach the container to the IOT Hub
+
+File are uploaded using HTTP protocol, DOES NOT CONSUME MESSAGE METER
+ Log File - 10 MB every month
+ Sensor Raw Data - massigve data
+
+
+
+ Device Send the File to IOT Hub --> Iot Hub --> Blog Storage Container
+
+ node upload-device-files.js
+ 
