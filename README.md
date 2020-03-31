@@ -127,5 +127,28 @@ npm install @azure/event-hubs@2
 
 ```
 npm install azure-iothub
+
+node invoke-method.js
 ```
 
+
+# Azure Cli
+
+az iot hub device-identity show-connection-string --hub-name krishiot --device-id energy-1 --output table
+
+# ESP32
+
+1. ESP 32 https://www.amazon.in/SquadPixel-ESP-32-Bluetooth-Development-Board/dp/B071XP56LM/ref=sr_1_1?dchild=1&keywords=esp32&qid=1585633195&sr=8-1
+
+2. DHT 11 Sensor -  https://www.amazon.in/xcluma-Digital-Relative-Humidity-Temperature/dp/B072FJBF9T/ref=sr_1_1?crid=X6MVSFQD5AS0&dchild=1&keywords=dht11+sensor&qid=1585633219&sprefix=DHT11%2Caps%2C278&sr=8-1
+
+3. Arduino https://www.arduino.cc/en/Main/Software
+
+4. https://www.amazon.in/ApTechdeals-Jumper-Wires-Female-Breadboard/dp/B074J8M43C/ref=sr_1_2?crid=2BIIB4HUYSUHR&dchild=1&keywords=jumper+wire+female+to+female&qid=1585633349&sprefix=jumper+wire+%2Caps%2C276&sr=8-2
+
+5. Relay https://www.amazon.in/s?k=arduino+relay+module&crid=3MPNRODXIKLW&sprefix=arduino+relay%2Caps%2C279&ref=nb_sb_ss_i_1_13
+
+# Send message to device
+
+1. run node device-receive-messages.js in one command prompt
+2. run node send-message-to-device.js 

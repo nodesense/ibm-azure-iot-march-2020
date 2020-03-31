@@ -38,14 +38,11 @@ var methodChangeUnitParams = {
   };
 
 // Call the direct method on your device using the defined parameters.
-client.invokeDeviceMethod(deviceId, methodResetEnergyTotalParams, function callback(err, result) {
+client.invokeDeviceMethod(deviceId, methodChangeUnitParams, function callback(err, result) {
   if (err) {
       console.error('Failed to invoke method \'' +  '\': ' + err.message);
   } else {
       console.log('Response is ',  JSON.stringify(result, null, 2));
   }
-});
- 
-  
-   
-  
+}); 
+

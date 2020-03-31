@@ -8,7 +8,7 @@
 
 
 // Shared Access Policies/iothubownwer/primary connection string
-var connectionString = 'HostName=krishiot.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=HhGIQKswU1ih5MJl6quLdrS/xjF/EFq+2jy8lVHvKGo=';
+var connectionString = 'HostName=krishiot.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=GXk5btikuUUoBdk9+2Fzc3DcpYwB4Y9L3PWlrGNxhuo=';
 
 // npm install @azure/event-hubs
 var {  EventHubClient, EventPosition } = require('@azure/event-hubs');
