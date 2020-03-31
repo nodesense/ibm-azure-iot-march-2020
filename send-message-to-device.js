@@ -11,12 +11,12 @@ var connectionString = 'HostName=krishiot.azure-devices.net;SharedAccessKeyName=
 
 var Client = require('azure-iothub').Client;
 
-var deviceId = 'device-1';
+var deviceId = 'esp-temp-device-2';
 
 // Connect to the service-side endpoint on your IoT hub.
 var client = Client.fromConnectionString(connectionString);
  
 
-client.send(deviceId, "Message coming from App", function callback() {
+client.send(deviceId, "Message2 coming from App", function callback() {
     console.log('message sent ');
 })

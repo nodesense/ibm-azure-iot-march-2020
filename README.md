@@ -152,3 +152,41 @@ az iot hub device-identity show-connection-string --hub-name krishiot --device-i
 
 1. run node device-receive-messages.js in one command prompt
 2. run node send-message-to-device.js 
+
+
+
+1. Device to IOT Hub
+2. IOT Hub to Event Hub 
+3. Event Hub is log storge, we cannot query/delete/data is deleted after retention period by default 1 day or upto 7 days
+
+
+1. Device, report data once a day [Gas Level]
+2. 100000+ devices deployed
+3. As a customer/service service engineer, want ot know gas level
+   1. Go to event hub and read data, we cannot fetch single device data, get all device data
+
+4. What is last known gas level, instead waiting for whole day
+
+
+# Device TWIN
+
+    0. To know last known device state
+    1. IOT Hub feature
+    2. Per Device
+    3. JSON Property Bag
+       1. desired properties [Service/App side, requestign device to do something]
+             1. From IOT Cloud side/mobile app/app side, instruct the deivce to do something/report addtional properties such as dianostic properties which is not send by default
+       
+            2. Upgrade firmware to latest
+               1. the device is running on firmware verion 1.0
+               2. OEM released firmware v 1.1
+               3. how to inform this to device?
+       2. reported properties [device, update last known state]
+          1. The device last known state, reported by device itself to IOT Hub
+          2. Update latest Gas Level
+
+
+1. run node device-twin.js 
+
+    go to iot hub --> devices --> pick a device-1 --> check device-twin tab
+    
