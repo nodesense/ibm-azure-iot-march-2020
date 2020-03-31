@@ -287,3 +287,32 @@ install
 
 run node alert-servicebus.js
 
+# Stream Analytics
+
+    Input ==> Query [Processing] ==> Output [Many types of output]
+
+    Event Hub => avg current, voltage, energy con => service bus queue
+
+    Input 
+        Event Hub
+        IOT Hub
+        Blob 
+
+
+
+    create Stream Analytics Job
+
+    Add input, IotHub
+
+    Add Output, ServiceBus Queue, ensure that policy is created manually, with manage permission
+
+    add query from stream-analytics.sql
+
+    Start the stream analytics job
+
+    node analytics-servicebus.js
+
+    
+
+
+# Power BI - Visualization / Optionals

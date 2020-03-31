@@ -118,7 +118,8 @@ setInterval(function(){
     voltage: voltage,
     current: current,
     energy: energy,
-    totalEnergy: calculatedEnergy
+    totalEnergy: calculatedEnergy,
+    type: 'energy'
   }));
  
   // What is inside the message
