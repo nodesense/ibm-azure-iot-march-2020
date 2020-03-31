@@ -219,4 +219,11 @@ File are uploaded using HTTP protocol, DOES NOT CONSUME MESSAGE METER
 
     node delete-devices.js
 
-    
+---
+# QUERIES
+
+SELECT * FROM devices
+  WHERE  properties.reported.metrics.gas_level < 75
+
+node querying-devices.js 
+
