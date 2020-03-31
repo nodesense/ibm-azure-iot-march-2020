@@ -227,3 +227,63 @@ SELECT * FROM devices
 
 node querying-devices.js 
 
+# Message Routing
+
+    Single IOT Hub
+        differnt types of devices 
+                water-flow meter
+                energy meter
+                temp meter
+                home-appliances
+                solar-energy
+                ...
+
+                all of them posting data to single iot hub
+
+                how to seperate the device data?
+
+        alert if true, 
+            store them in to blob storage as backup
+            pass to other azure services so that we can handle the noticiations
+
+
+        if route matched,
+            default fallback route - always exist.
+                push messsage to Built in Event Hub
+
+
+IOT Domain
+
+    Upstream - Field Devices
+    Downstream - data processing, storage, analytics
+
+Industry - Oil
+
+    Upstream - Pull crude oil from earth
+    Downstream - Refineries, process crude oil, produce petrol, gas etc...
+
+
+
+Service Bus
+    Service Bus Queue
+                    FIFO - Ordered Delivery, guarenteed to deliver message only one
+
+                    publisher --> one susbcriber
+                    msg1              msg1
+
+                    push - add to queue
+                    peek - pull from queue
+
+    Service Bus Topics
+                    AMQP
+                        publisher --> multiple susbcribers 
+                        publish msg 1 --> susbcribed by sub1, sub2, sub3, all get msg1
+
+# Service bus
+
+install
+
+    npm install @azure/service-bus
+
+run node alert-servicebus.js
+

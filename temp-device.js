@@ -38,6 +38,9 @@ setInterval(function(){
     humidity: humidity
   }));
 
+
+  // $body.temperature > 35 AND $body.humidity < 50
+
   // Add a custom application property to the message.
   // An IoT hub can filter on these properties without access to the message body.
   // Attached to rule alert = true
@@ -45,8 +48,11 @@ setInterval(function(){
   // key and value can be anything
 
   // additional meta information send along with message, optional
-  message.properties.add('alert', (temperature > 40) ? 'true' : 'false');
-  
+  message.properties.add('alert', (temperature >= 35) ? 'true' : 'false');
+  message.properties.add('type',  'temp');
+
+  // message.properties.add('processingPath', 'hot');
+
   // What is inside the message
   message.contentType = "application/json";
   message.contentEncoding = "utf-8";

@@ -125,6 +125,8 @@ setInterval(function(){
   message.contentType = "application/json";
   message.contentEncoding = "utf-8";
 
+  message.properties.add('type',  'energy');
+
   console.log('Sending message: ' + message.getData());
 
 
